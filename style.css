@@ -109,7 +109,7 @@ main {
   color: white;
   font-size: clamp(1.5rem, calc(1.32rem + 0.75vw), 2rem);
   font-weight: var(--fw-bold);
-  margin-bottom: clamp(0.5rem, calc(0.37rem + 0.56vw), 0.88rem);
+  padding-bottom: clamp(0.5rem, calc(0.37rem + 0.56vw), 0.88rem);
 }
 
 .result .verdict {
@@ -119,18 +119,19 @@ main {
 
 .summary {
   padding-inline: clamp(1.88rem, calc(1.65rem + 0.94vw), 2.5rem);
+  margin-bottom: 1.5rem;
 }
 
 .summary h3 {
   color: var(--dark-navy);
   font-size: clamp(1.13rem, calc(0.99rem + 0.56vw), 1.5rem);
-  margin-bottom: clamp(1.5rem, calc(1.41rem + 0.38vw), 1.75rem);
+  padding-bottom: clamp(1.5rem, calc(1.41rem + 0.38vw), 1.75rem);
   font-weight: 700;
 }
 
 .summary ul {
   list-style-type: none;
-  margin-bottom: clamp(1.5rem, calc(1.15rem + 1.5vw), 2.5rem);
+  padding-bottom: clamp(1.5rem, calc(1.15rem + 1.5vw), 2.5rem);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -209,12 +210,14 @@ main {
     height: 512px;
     display: flex;
     justify-content: center;
+    border-radius: 32px;
   }
 
   .result,
   .summary {
     height: 512px;
     padding-block: 40px;
+    margin-bottom: unset;
   }
 
   .result {
